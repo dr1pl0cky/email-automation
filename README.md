@@ -20,12 +20,14 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine
 
 ## Running the tests
 
-Using the dummy data in `Book1.xlsx` and files such as `test1` etc. You can test the script to make sure its working before using customer data. 
+Using the dummy data in `Book1.xlsx` and files such as `test1` etc. You can test the script to make sure its working before using customer data. Make sure the xlsx has said filenames correct for each user.
 
 Change the email and password in script as needed and make sure you go to your email providor and enable 3rd party apps such as gmail.
 
 Gmail example:
 `Account Settings > Security > Less secure apps > ON`
+
+Change code for parameters that match xlsx headers. Running will spit out an error that 1st line in output.csv is not a valid email and is just because headers are in place. They are needed however, this will be fixed in another version, probably. Maybe. 
 
 
 ## Deployment
